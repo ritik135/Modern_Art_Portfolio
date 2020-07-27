@@ -119,9 +119,11 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait.png");
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      padding: 50%;
+      border-radius: 3rem greenyellow solid; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -176,6 +178,11 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%; }
+  header .ritikpng {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: greenyellow 3px solid; }
 
 .text-secondary {
   color: greenyellow; }
@@ -190,16 +197,15 @@ main {
       main .icons a:hover {
         color: greenyellow;
         transition: all 0.5s ease-out; }
+  main .ritikpng {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: greenyellow 3px solid; }
   main#home {
     overflow: hidden; }
     main#home h1 {
       margin-top: 20vh; }
-
-.ritikpng {
-  grid-area: bioimage;
-  margin: auto;
-  border-radius: 50%;
-  border: greenyellow 3px solid; }
 
 .about-info {
   display: grid;
@@ -207,6 +213,11 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: greenyellow 3px solid; }
+  .about-info .ritikpng {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -236,6 +247,11 @@ main {
       opacity: 0.5;
       border-color: greenyellow;
       transition: all 0.5s ease-out; }
+  .projects .ritikpng {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: greenyellow 3px solid; }
 
 .boxes {
   display: flex;
@@ -255,6 +271,11 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
+  .boxes .ritikpng {
+    grid-area: bioimage;
+    margin: auto;
+    border-radius: 50%;
+    border: greenyellow 3px solid; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -309,9 +330,11 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.jpg");
+      background: url("../img/portrait.png");
       width: 150px;
-      height: 150px; }
+      height: 150px;
+      padding: 50%;
+      border-radius: 3rem greenyellow solid; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }

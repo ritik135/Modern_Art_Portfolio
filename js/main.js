@@ -10,6 +10,7 @@ let showMenu = false ;
 menuBtn.addEventListener('click',toggleMenu);
 
 function toggleMenu(){
+    
     if(!showMenu){
         menuBtn.classList.add('close');
         menu.classList.add('show');
@@ -28,7 +29,10 @@ function toggleMenu(){
         navItems.forEach(item => item.classList.remove('show'));
 
         //set menu state
-        showMenu = true;
+        showMenu = false;
     }
 
 }
+
+
+
