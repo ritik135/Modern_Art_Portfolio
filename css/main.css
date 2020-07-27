@@ -55,9 +55,8 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url("../img/portrait.jpg");
-      border-radius: 50%;
-      border: solid 3px greenyellow; }
+      background: url(ritik.jpg);
+      border-radius: 50%; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
@@ -119,11 +118,12 @@
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.png");
+      background: url(ritik.jpg);
       width: 150px;
       height: 150px;
-      padding: 50%;
-      border-radius: 3rem greenyellow solid; }
+      margin: auto;
+      border-radius: 50%;
+      border: greenyellow 3px solid; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
@@ -178,11 +178,6 @@ header {
   position: fixed;
   z-index: 2;
   width: 100%; }
-  header .ritikpng {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: greenyellow 3px solid; }
 
 .text-secondary {
   color: greenyellow; }
@@ -197,11 +192,6 @@ main {
       main .icons a:hover {
         color: greenyellow;
         transition: all 0.5s ease-out; }
-  main .ritikpng {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: greenyellow 3px solid; }
   main#home {
     overflow: hidden; }
     main#home h1 {
@@ -213,11 +203,6 @@ main {
   grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-image {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: greenyellow 3px solid; }
-  .about-info .ritikpng {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
@@ -247,11 +232,6 @@ main {
       opacity: 0.5;
       border-color: greenyellow;
       transition: all 0.5s ease-out; }
-  .projects .ritikpng {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: greenyellow 3px solid; }
 
 .boxes {
   display: flex;
@@ -271,11 +251,103 @@ main {
       color: #000; }
       .boxes div:hover span {
         color: #000; }
-  .boxes .ritikpng {
-    grid-area: bioimage;
-    margin: auto;
-    border-radius: 50%;
-    border: greenyellow 3px solid; }
+
+.container1 {
+  width: 80%;
+  padding: 20px; }
+
+.container1 .row100 {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+
+.container1 .row100 .col {
+  position: relative;
+  width: 100%;
+  padding: 0 10px;
+  margin: 30px 0 10px;
+  transition: 0.5s; }
+
+.container1 .row100 .inputBox {
+  position: relative;
+  width: 100%;
+  height: 40px;
+  color: greenyellow; }
+
+.container1 .row100 .inputBox input,
+.container1 .row100 .inputBox.textarea textarea {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  padding: 0 10px;
+  z-index: 1;
+  color: #000; }
+
+.container1 .row100 .inputBox .text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  line-height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  display: block;
+  transition: 0.5s;
+  pointer-events: none; }
+
+.container1 .row100 .inputBox input:focus + .text,
+.container1 .row100 .inputBox input:valid + .text {
+  top: -35px;
+  left: -10px; }
+
+.container1 .row100 .inputBox .line {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: greenyellow;
+  transition: 0.5s;
+  border-radius: 2px;
+  pointer-events: none; }
+
+.container1 .row100 .inputBox input:focus ~ .line,
+.container1 .row100 .inputBox input:valid ~ .line {
+  height: 100%; }
+
+.container1 .row100 .inputBox.textarea {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  padding: 10px 0; }
+
+.container1 .row100 .inputBox.textarea textarea {
+  height: 100%;
+  resize: none; }
+
+.container1 .row100 .inputBox textarea:focus + .text,
+.container1 .row100 .inputBox textarea:valid + .text {
+  top: -35px;
+  left: -10px; }
+
+.container1 .row100 .inputBox textarea:focus ~ .line,
+.container1 .row100 .inputBox textarea:valid ~ .line {
+  height: 100%; }
+
+input[type="submit"] {
+  border: none;
+  padding: 7px 35px;
+  cursor: pointer;
+  outline: none;
+  background: greenyellow;
+  color: #000;
+  font-size: 18px;
+  border-radius: 2px; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -288,11 +360,11 @@ main {
 
 .btn-dark {
   background: black;
-  color: red; }
+  color: greenyellow; }
 
 .btn-light {
   background: black;
-  color: blue; }
+  color: #CEE27D; }
 
 #main-footer {
   text-align: center;
@@ -330,11 +402,12 @@ main {
     height: 25vh;
     transform: translate3d(100%, 0, 0); }
     .menu-branding .portrait {
-      background: url("../img/portrait.png");
+      background: url(ritik.jpg);
       width: 150px;
       height: 150px;
-      padding: 50%;
-      border-radius: 3rem greenyellow solid; }
+      margin: auto;
+      border-radius: 50%;
+      border: greenyellow 3px solid; }
   .about-info {
     grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
     grid-template-columns: 1fr; }
